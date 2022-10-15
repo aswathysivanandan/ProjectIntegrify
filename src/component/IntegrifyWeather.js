@@ -21,7 +21,7 @@ export const IntegrifyWeather = ({ cityData }) => {
     setLoading(true);
     axios
       .get(
-        `http://dataservice.accuweather.com/forecasts/v1/daily/1day/${cityData.Key}?apikey=Fi5iwkU89kSZOUWy6m0K3bDDQcEVkY1K`)
+        `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${cityData.Key}?apikey=Fi5iwkU89kSZOUWy6m0K3bDDQcEVkY1K`)
       .then((res) => {
         setData(res.data.DailyForecasts[0]);
         console.log(res.data);
